@@ -1,3 +1,3 @@
 # BVQA-HEKE
 
-It would be updated soon.
+The data, code and pretrained models will be updated soon.
