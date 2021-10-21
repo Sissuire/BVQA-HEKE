@@ -44,9 +44,24 @@ When the pretrained models are put in the folder `./pretrained`, you can
 
 If you are interested in other pretrained models in our paper (e.g., HEKE$_c^1$-r2p1d, HEKE$_c^2$-r2p1d, and HEKE$_c^1$-resnet), please contact me for sharing.
 
-### Pretraining && WELL-Set
+### WELL-Set 
 
-to be constructed ..
+The WELL-Set is sourced from internet videos, so we cannot directly release the datasets considering the copyright.
+
+One can use the guidance to download, process and generate the dataset for your purpose. More details are in the folder `./WELL-Set`.
+
+### Pretraining
+
+Our encoders are pretrained on WELL-Set. Once the pretraining is done, the encoder is fixed for all the validation. The pretraining requires WELL-SEt or other large-scale datasets with weak labels. 
+
+`demo_train_baseline.py` and `demo_train_baseline_resnet_RGB_diff.py` provide the source codes for pretraining. 
+
+#### some details
+
+- In our implementation, the videos in WELL-Set are stored as images with down-sampling ($768 \times 432$) -> $384 \times 216$).
+- The input size of our encoder `r2p1d_HEKE_4` is `[batch, 3, 8, 216, 384]` where 8 is the number of frames, and that of `resnet_HEKE_4` is `[batch, 3, 216, 384]`.
+- Actually only four segments (each contains 8 consecutive frames) are stored for each video sample. The argument `--dynamic` means if we select the segment randomly or not.
+- We are encouraging you use multiple GPUs to enable a bigger batch_size. But considering the limitation, we only use `batch_size=8`.
 
 ### Environment
 ```
