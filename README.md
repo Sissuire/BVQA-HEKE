@@ -1,5 +1,8 @@
 # BVQA-HEKE
 
-Pretrained encoders and extracted features are available now.
+---------------------
+Pretrained encoders, VQA features, and validation codes are available now.
+
+-----------------------
 
 To be constructed ..
