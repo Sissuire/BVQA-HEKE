@@ -1,3 +1,8 @@
+# Code for completely blind VQA performance / feature extraction 
+# -----------------------------------------------
+# contact via `yongxu.liu@stu.xidian.edu.cn`
+
+
 import os
 import skvideo.io
 import random
