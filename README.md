@@ -69,7 +69,7 @@ Our encoders are pretrained on WELL-Set. Once the pretraining is done, the encod
 
 #### some details
 
-- In our implementation, the videos in WELL-Set are stored as images with down-sampling ($768 \times 432$) -> $384 \times 216$).
+- In our implementation, the videos in WELL-Set are stored as images with down-sampling `768x432 -> 384x216`.
 - The input size of our encoder `r2p1d_HEKE_4` is `[batch, 3, 8, 216, 384]` where 8 is the number of frames, and that of `resnet_HEKE_4` is `[batch, 3, 216, 384]`.
 - Actually only four segments (each contains 8 consecutive frames) are stored for each video sample. The argument `--dynamic` means if we select the segment randomly or not.
 - We are encouraging you use multiple GPUs to enable a bigger batch_size. But considering the limitation, we only use `batch_size=8`.
