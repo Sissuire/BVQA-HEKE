@@ -48,6 +48,10 @@ If you are interested in other pretrained models in our paper (e.g., HEKE$_c^1$-
 
 to be constructed ..
 
+### Environment
+
+Python 3.6.5, scipy 1.1.0, numpy 1.14.3, PyTorch 1.1.0 on Ubuntu 16.04. Different versions may occur slight changes in performance.
+
 ### Cite
 If you are interested in the work, or find the code helpful, please cite our work
 ```
