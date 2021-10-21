@@ -32,7 +32,7 @@ Put the features in the folder `./data`, and you can use the features for intra-
 
 Currently we only upload the features from r2p1d_HEKE_4. If you need other features, please feel free to contact me.
 
-### Performance validation
+### Performance validation on synthetic datasets
 
 When the pretrained models are put in the folder `./pretrained`, you can 
 
@@ -41,12 +41,19 @@ When the pretrained models are put in the folder `./pretrained`, you can
 
 Or your can also use the provided preextracted features directly. 
 
-- (2) finetune the regressor with `demo_finetune_VQA.py` to get the intra-dataset performance.
+- (2) finetune the regressor with `demo_finetune_VQA.py` to get the intra-dataset performance on synthetic datasets.
 `python3 -u demo_finetune_VQA.py --base_path PATH_TO_DATASET --database LIVE --load PATH_TO_FEATURE --epoch 300 --lr 1e-4 --batch_size BATCH_SIZE --seed 12318 --f1 --f2 --f3 --f4 --fave --fmax --fstd`
 
 - (3) conduct inter-dataset / cross-database experiment by 'demo_crossDB_VQA.py`. Command is simiar and please check in the file.
-
+ 
 If you are interested in other pretrained models in our paper (e.g., HEKE$_c^1$-r2p1d, HEKE$_c^2$-r2p1d, and HEKE$_c^1$-resnet), please contact me for sharing.
+
+### Performance validation on authentic datasets
+
+Similarly, you should first extract features with the pretrained model via `demo_extract_features_authentic.py`.
+
+We use the code from [bench_mark](https://github.com/vztu/BVQA_Benchmark) to verify the effectiveness of the extracted features on UGC databases.
+
 
 ### WELL-Set 
 
@@ -66,6 +73,7 @@ Our encoders are pretrained on WELL-Set. Once the pretraining is done, the encod
 - The input size of our encoder `r2p1d_HEKE_4` is `[batch, 3, 8, 216, 384]` where 8 is the number of frames, and that of `resnet_HEKE_4` is `[batch, 3, 216, 384]`.
 - Actually only four segments (each contains 8 consecutive frames) are stored for each video sample. The argument `--dynamic` means if we select the segment randomly or not.
 - We are encouraging you use multiple GPUs to enable a bigger batch_size. But considering the limitation, we only use `batch_size=8`.
+- We adopt `LIVE` video dataset as the validation set to monitor the training.
 
 ### Environment
 ```
