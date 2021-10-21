@@ -382,8 +382,8 @@ class DatasetTraining(Dataset):
     A Training Dataset for a folder of videos
 
     args:
-        directory (str): the path to the directory containing all videos
-        mode (str, optional): determines whether to read train/test data
+        info (str): pickle file containinng the information of the dataset (dis_name, label, ...)
+        basep (str): PATH to the dataset
     """
 
     def __init__(self, info, basep='/mnt/diskplus/datasets/images4database_downscale',
@@ -491,8 +491,8 @@ class DatasetTraining_RGBDiff(Dataset):
     A Training Dataset for a folder of videos
 
     args:
-        directory (str): the path to the directory containing all videos
-        mode (str, optional): determines whether to read train/test data
+        info (str): pickle file containinng the information of the dataset (dis_name, label, ...)
+        basep (str): PATH to the dataset
     """
 
     def __init__(self, info, basep='/mnt/diskplus/datasets/images4database_downscale',
@@ -598,8 +598,8 @@ class DatasetValidation(Dataset):
     A Validation Dataset for a folder of videos
 
     args:
-        directory (str): the path to the directory containing all videos
-        mode (str, optional): determines whether to read train/test data
+        info (str): pickle file containinng the information of the dataset (dis_name, label, ...)
+        basep (str): PATH to the dataset
     """
 
     def __init__(self, dataset='LIVE', basep='/mnt/diskplus/datasets/images4database_downscale',
@@ -701,8 +701,8 @@ class DatasetValidation_RGBDiff(Dataset):
     A Validation Dataset for a folder of videos
 
     args:
-        directory (str): the path to the directory containing all videos
-        mode (str, optional): determines whether to read train/test data
+        info (str): pickle file containinng the information of the dataset (dis_name, label, ...)
+        basep (str): PATH to the dataset
     """
 
     def __init__(self, dataset='LIVE', basep='/mnt/diskplus/datasets/images4database_downscale',
@@ -820,8 +820,8 @@ if __name__ == '__main__':
     # -------------------------------------------------------------------------------
 
     # ===============================================================================
-    basep = '/mnt/diskplus/datasets/Video_Set/dis_png'
-    trainset = DatasetTraining(info='dataset.info.pkl', basep=basep, preload=False, isDynamic=True)
+    basep = '/mnt/diskplus/datasets/WELL-Set/dis_png'
+    trainset = DatasetTraining(info='wellset.info.pkl', basep=basep, preload=False, isDynamic=True)
     train_loader = DataLoader(trainset, batch_size=1, shuffle=True, num_workers=0, drop_last=True)
 
     for dis, msssim, gmsd, stgmsd, strred, vmaf in train_loader:
