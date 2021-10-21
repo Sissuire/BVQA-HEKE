@@ -1,3 +1,5 @@
 # BVQA-HEKE
 
-The data, code and pretrained models will be updated soon.
+Pretrained encoders and extracted features are available now.
+
+To be constructed ..
