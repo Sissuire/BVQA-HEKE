@@ -1,6 +1,6 @@
 # BVQA-HEKE
 
-To be constructed ..
+Source codes for "No-Reference Video Quality Assessment with Heterogeneous Knowledge Ensemble" accepted by ACM-MM 2021, and the extension of this work "Spatiotemporal Representation Learning for Blind Video Quality Assessment" is published in IEEE-TCSVT.
 
 ---------------------
 Pretrained encoders, VQA features, and validation codes are available now.
@@ -18,7 +18,7 @@ If you are interested in other pretrained models in our paper (e.g., HEKE$_c^1$-
 
 ### PreExtracted features
 
-The VQA features of six synthetic datasets (i.e., LIVE, CSIQ, IVPL, IVC-IC, EPFL-PoliMI, and LIVE-Mobile) are provided. Download the preextracted features from [GoogleDrive]() or [百度云](https://pan.baidu.com/s/1OsgYJs5Pi7WZfxhk6M_qrg), 提取码：932a
+The VQA features of six synthetic datasets (i.e., LIVE, CSIQ, IVPL, IVC-IC, EPFL-PoliMI, and LIVE-Mobile) are provided. Download the preextracted features from [GoogleDrive](https://drive.google.com/drive/folders/1XArB2E2qd4P0OLBKP0qDck5Ioq66nPAH?usp=sharing) or [百度云](https://pan.baidu.com/s/1OsgYJs5Pi7WZfxhk6M_qrg), 提取码：932a
 
 Currently we only upload the features from r2p1d_HEKE_4. If you need other features, please feel free to contact me.
 
@@ -35,3 +35,21 @@ When the pretrained models are put in the folder `./pretrained`, you can
 - (3) conduct inter-dataset / cross-database experiment by 'demo_crossDB_VQA.py`. Command is simiar and please check the file.
 
 If you are interested in other pretrained models in our paper (e.g., HEKE$_c^1$-r2p1d, HEKE$_c^2$-r2p1d, and HEKE$_c^1$-resnet), please contact me for sharing.
+
+### Cite
+If you are interested in the work, or find the code helpful, please cite our work
+```
+@ARTICLE{heke-csvt,
+  author={Liu, Yongxu and Wu, Jinjian and Li, Leida and Dong, Weisheng and Zhang, Jinpeng and Shi, Guangming},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
+  title={Spatiotemporal Representation Learning for Blind Video Quality Assessment}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={},
+  doi={10.1109/TCSVT.2021.3114509}}
+```
+
+### Contact
+
+If any question or bug, feel free to contact me via `yongxu.liu@stu.xidian.edu.cn`.
