@@ -1,3 +1,7 @@
+# Code for completely blind VQA performance / feature extraction with resnet-50
+# -----------------------------------------------
+# contact via `yongxu.liu@stu.xidian.edu.cn`
+
 import os
 import skvideo.io
 from PIL import Image
