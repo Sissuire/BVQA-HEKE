@@ -1,3 +1,7 @@
+# Code for intra-dataset performance 
+# -----------------------------------------------
+# contact via `yongxu.liu@stu.xidian.edu.cn`
+
 import os
 import random
 import numpy as np
