@@ -42,6 +42,10 @@ When the pretrained models are put in the folder `./pretrained`, you can
 
 If you are interested in other pretrained models in our paper (e.g., HEKE$_c^1$-r2p1d, HEKE$_c^2$-r2p1d, and HEKE$_c^1$-resnet), please contact me for sharing.
 
+### Pretraining && WELL-Set
+
+to be constructed ..
+
 ### Cite
 If you are interested in the work, or find the code helpful, please cite our work
 ```
