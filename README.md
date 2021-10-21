@@ -8,6 +8,10 @@ Pretrained encoders, VQA features, and validation codes are available now.
 
 -----------------------
 
+### NOTE
+
+Our dataloading relies on a dataset_info file named `xxx_list_for_VQA.txt`, which contains the information of the dataset. In folder `./dataset_info/`, we provide the files of the datasets. You can revise the code to suit your dataloading settings properly.
+
 ### Pretrained model
 
 We provide the pretrained models: HEKE$_c^4$-r2p1d and HEKE$_c^4$-resnet. 
