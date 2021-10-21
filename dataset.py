@@ -1,3 +1,9 @@
+# This file is only used in pretraining on WELL-Set.
+#
+# For a fast data loading, we have convert the videos into images with average downsampling. 
+# You can manage your dataloading as you like.
+#
+
 import numpy as np
 from torch.utils.data import DataLoader, Dataset
 import pickle
@@ -10,8 +16,8 @@ class VideoDataset(Dataset):
     A Dataset for a folder of videos
 
     args:
-        directory (str): the path to the directory containing all videos
-        mode (str, optional): determines whether to read train/test data
+        data (dict): a dict containing the information
+        data_path (str): PATH to the dataset
     """
 
     def __init__(self, data, data_path='/mnt/diskplus/datasets/images4database_downscale', mode='train'):
