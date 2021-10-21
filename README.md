@@ -56,7 +56,7 @@ One can use the guidance to download, process and generate the dataset for your 
 
 ### Pretraining
 
-Our encoders are pretrained on WELL-Set. Once the pretraining is done, the encoder is fixed for all the validation. The pretraining requires WELL-SEt or other large-scale datasets with weak labels. 
+Our encoders are pretrained on WELL-Set. Once the pretraining is done, the encoder is fixed for all the validation. The pretraining requires WELL-Set or other large-scale datasets with weak labels. 
 
 `demo_train_baseline.py` and `demo_train_baseline_resnet_RGB_diff.py` provide the source codes for pretraining. 
 
