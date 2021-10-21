@@ -3,9 +3,10 @@
 Source codes for "No-Reference Video Quality Assessment with Heterogeneous Knowledge Ensemble" accepted by ACM-MM 2021, and the extension of this work "Spatiotemporal Representation Learning for Blind Video Quality Assessment" is published in IEEE-TCSVT.
 
 ![](heke.png)
+
 ---------------------
 
-Pretrained encoders, VQA features, and validation codes are available now.
+Pretrained encoders, VQA features, and codes are available now.
 
 -----------------------
 
