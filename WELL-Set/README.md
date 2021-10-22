@@ -49,7 +49,7 @@ Run `noise_maker_all_compression.sh` and `noise_maker_PacketLoss_H264_crf` for t
 
 Once you generate the degraded data, it is easy to use FR-VQA models to compute the weak labels. The codes are provided in the folder `./fr_vqa_for_weak_labels`. See the `demo_run.m` in the folder.
 
-Once the FR-VQA labels are computed, we compute statistics of the FR-VQA methods on LIVE-VQA database, and use the mean, min, and max values to rescale the weak labels `L = 0.5 + 8.5 * (L - Lmin) / (Lmax - Lmin)`. Please check the file `dataset.py` (the comment content in [Line 458](https://github.com/Sissuire/BVQA-HEKE/blob/5b5b7f168fbafe651380bbcc21f778e1a722dfa3/dataset.py#L458) and [Line 472](https://github.com/Sissuire/BVQA-HEKE/blob/5b5b7f168fbafe651380bbcc21f778e1a722dfa3/dataset.py#L472)) in the previous directory.
+Once the FR-VQA labels are computed, we compute statistics of the FR-VQA methods on LIVE-VQA database, and use the mean, min, and max values to rescale the weak labels `L = 0.5 + 8.5 * (L - Lmin) / (Lmax - Lmin)`. Please check the file `dataset.py` (the commented content in [Line 458](https://github.com/Sissuire/BVQA-HEKE/blob/5b5b7f168fbafe651380bbcc21f778e1a722dfa3/dataset.py#L458) and [Line 472](https://github.com/Sissuire/BVQA-HEKE/blob/5b5b7f168fbafe651380bbcc21f778e1a722dfa3/dataset.py#L472)) in the previous directory.
 
 #### 5. Contact
 
