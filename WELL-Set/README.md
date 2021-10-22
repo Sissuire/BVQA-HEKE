@@ -8,7 +8,7 @@ WELL-Set is a synthetic video quality dataset, where the reference videos are ma
 - ST-GMSD
 - ST-RRED
 
-Other methods with robust performance and computational efficiency are also good.
+These methods are open-source. If there's any bug, you can contact me or directly download the codes from corresponding methods. Other methods with robust performance and computational efficiency are also good for the purpose.
 
 ### Release
 
