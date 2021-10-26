@@ -96,6 +96,20 @@ If you are interested in the work, or find the code helpful, please cite our wor
   number={},
   pages={},
   doi={10.1109/TCSVT.2021.3114509}}
+  
+@inproceedings{heke-acmmm,
+ author = {Wu, Jinjian and Liu, Yongxu and Li, Leida and Dong, Weisheng and Shi, Guangming},
+ title = {No-Reference Video Quality Assessment with Heterogeneous Knowledge Ensemble},
+ year = {2021},
+ publisher = {Association for Computing Machinery},
+ address = {New York, NY, USA},
+ doi = {10.1145/3474085.3475550},
+ booktitle = {Proceedings of the 29th ACM International Conference on Multimedia},
+ pages = {4174–4182},
+ numpages = {9},
+ location = {Virtual Event, China},
+ series = {MM '21}
+}
 ```
 
 ### Contact
