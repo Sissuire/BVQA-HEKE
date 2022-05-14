@@ -43,7 +43,7 @@ We uniformly transcode the video with `libx264` for a fast implementation.
 
 We implement various compression and transmission artifacts with `FFmpeg`. Please check the codes in the folder `./src_noise_maker`. 
 
-Run `noise_maker_all_compression.sh` and `noise_maker_PacketLoss_H264_crf` for the sample generation. In the code, the file `list.txt` contains the reference clips. The code reads each reference clip and generates the corresponding degraded data in particular folders.
+Run `noise_maker_all_compression.sh` and `noise_maker_PacketLoss_H264_crf.sh` for the sample generation. In the code, the file `list.txt` contains the reference clips. The code reads each reference clip and generates the corresponding degraded data in particular folders.
 
 #### 4. Weakly labeling
 
