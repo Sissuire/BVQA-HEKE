@@ -91,10 +91,10 @@ If you are interested in the work, or find the code helpful, please cite our wor
   author={Liu, Yongxu and Wu, Jinjian and Li, Leida and Dong, Weisheng and Zhang, Jinpeng and Shi, Guangming},
   journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
   title={Spatiotemporal Representation Learning for Blind Video Quality Assessment}, 
-  year={2021},
-  volume={},
-  number={},
-  pages={},
+  year={2022},
+  volume={32},
+  number={6},
+  pages={3500-3513},
   doi={10.1109/TCSVT.2021.3114509}}
   
 @inproceedings{heke-acmmm,
