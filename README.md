@@ -95,7 +95,8 @@ If you are interested in the work, or find the code helpful, please cite our wor
   volume={32},
   number={6},
   pages={3500-3513},
-  doi={10.1109/TCSVT.2021.3114509}}
+  doi={10.1109/TCSVT.2021.3114509}
+}
   
 @inproceedings{heke-acmmm,
  author = {Wu, Jinjian and Liu, Yongxu and Li, Leida and Dong, Weisheng and Shi, Guangming},
