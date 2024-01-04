@@ -115,4 +115,4 @@ If you are interested in the work, or find the code helpful, please cite our wor
 
 ### Contact
 
-If any question or bug, feel free to contact me via `yongxu.liu@stu.xidian.edu.cn`.
+If any question or bug, feel free to contact me via `yongxu.liu@xidian.edu.cn`.
